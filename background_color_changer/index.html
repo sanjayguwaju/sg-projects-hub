@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <h1>HTML Style Object</h1>
+    <h2>The AMit Property</h2>
+    <h2>The Hero</h2>
+    <h2>Bckground Button</h2>
+
+    <button onclick="changeStyle()">Set background and text</button>
+    <button onclick="revertChanges()">Revert changes</button>
+
+    <script>
+        function changeStyle() {
+            const h2Element = document.getElementsByTagName('h2')[0];
+            MaathiPagemaBhakoText = h2Element.textContent;
+            h2MaBhakoBackgroundColor = h2Element.style.backgroundColor;
+            h2MaBhakoColor= h2Element.style.color;
+
+            h2Element.style.backgroundColor = "#0000FF";
+            h2Element.textContent = "Hello, you mastered DOM manipulation";
+            h2Element.style.color = "red";
+        }
+
+        function revertChanges() {
+            const h2Element = document.getElementsByTagName('h2')[0];
+            h2Element.style.backgroundColor = h2MaBhakoBackgroundColor;
+            h2Element.textContent = MaathiPagemaBhakoText;
+            h2Element.style.color = h2MaBhakoColor;
+        }
+    </script>
+</body>
+</html>
