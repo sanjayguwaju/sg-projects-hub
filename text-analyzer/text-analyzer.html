@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Text Analyzer</title>
+  <style>
+    body {
+      text-align: center;
+      margin-top: 100px;
+    }
+  </style>
+</head>
+
+<body>
+  <h2>Text Analyzer</h2>
+  <textarea id="inputText" placeholder="Enter some text"></textarea>
+  <button onclick="analyzeText()">Analyze</button>
+  <div id="output">
+    <h3>Character Count:</h3>
+    <p id="charCount"></p>
+    <h3>Word Count:</h3>
+    <p id="wordCount"></p>
+    <h3>Preview:</h3>
+    <p id="preview"></p>
+  </div>
+
+  <script>
+    function analyzeText() {
+      var inputText = document.getElementById("inputText").value;
+      var charCount = inputText.length;
+      var wordCount = inputText.trim().split(/\s+/).length;
+      var preview = inputText.slice(0, 50); // Slicing the first 50 characters
+
+      document.getElementById("charCount").innerText = charCount;
+      document.getElementById("wordCount").innerText = wordCount;
+      document.getElementById("preview").innerText = preview;
+    }
+  </script>
+</body>
+</html>
