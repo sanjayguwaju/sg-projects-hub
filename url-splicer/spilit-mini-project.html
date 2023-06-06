@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>URL Splitter</title>
+  <style>
+    body {
+      text-align: center;
+      margin-top: 100px;
+    }
+  </style>
+</head>
+<body>
+  <h2>URL Splitter</h2>
+  <input type="text" id="inputURL" placeholder="Enter a URL">
+  <button onclick="splitURL()">Split</button>
+  <ul id="output"></ul>
+
+  <script>
+    function splitURL() {
+      var inputURL = document.getElementById("inputURL").value;
+      var urlComponents = inputURL.split('/');
+
+      var outputList = document.getElementById("output");
+      outputList.innerHTML = ""; // Clear previous results
+
+      urlComponents.forEach(function(component) {
+        var listItem = document.createElement("li");
+        listItem.textContent = component;
+        outputList.appendChild(listItem);
+      });
+    }
+  </script>
+</body>
+</html>
