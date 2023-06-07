@@ -1,45 +1,69 @@
-.card {
+body {
+  background-color: #007bff;
+}
+/* Style for the container of the cards */
+.class-container {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
+}
+
+/* Style for the cards */
+.card {
     width: 300px;
     margin: 20px;
     padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  
-  .card img {
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+    transition: transform 0.2s ease-in-out;
+}
+
+/* Hover effect for the cards */
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Style for the card image */
+.card img {
     width: 100%;
     height: auto;
+    border-radius: 10px;
     margin-bottom: 10px;
-  }
-  
-  .card-content {
+}
+
+/* Style for the card content */
+.card-content {
     text-align: center;
-  }
-  
-  .card-content h2 {
+}
+
+/* Style for the card title */
+.card-content h2 {
     font-size: 24px;
     margin-bottom: 10px;
-  }
-  
-  .card-content p {
+}
+
+/* Style for the card description */
+.card-content p {
     font-size: 16px;
     margin-bottom: 10px;
-  }
-  
-  .card-content a {
+}
+
+/* Style for the card link */
+.card-content a {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #007acc;
+    border-radius: 20px;
+    background-color: #007bff;
     color: #fff;
-    border-radius: 5px;
     text-decoration: none;
-    transition: background-color 0.3s ease;
-  }
-  
-  .card-content a:hover {
-    background-color: #005b9f;
-  }
+    font-size: 16px;
+    transition: background-color 0.2s ease-in-out;
+}
+
+/* Hover effect for the card link */
+.card-content a:hover {
+    background-color: #0062cc;
+}
