@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Text Slicer</title>
+  <style>
+    body {
+      text-align: center;
+      margin-top: 100px;
+    }
+  </style>
+</head>
+<body>
+  <h2>Text Slicer</h2>
+  <input type="text" id="inputText" placeholder="Enter some text">
+  <button onclick="sliceText()">Slice</button>
+  <p id="output"></p>
+
+  <script>
+    function sliceText() {
+      var inputText = document.getElementById("inputText").value;
+      var slicedText = inputText.slice(0, 5); // Slicing the first 5 characters
+
+      document.getElementById("output").innerText = slicedText;
+    }
+  </script>
+</body>
+</html>
