@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins',sans-serif; 
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(to right, aquamarine, blue);
+    padding: 10px;
+}
+.to-do{
+    width: 100%;
+    max-width: 540px;
+    background: white;
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+}
+.to-do h2{
+    color: 	#00ced1;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.to-do h2 img{
+    width: 80px;
+    margin-left: 10px;
+}
