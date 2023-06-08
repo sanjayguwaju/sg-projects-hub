@@ -1,6 +1,30 @@
 body {
   background-color: #007bff;
 }
+
+.navbar {
+  background-color: #6d2e65;
+  margin-top: -10px;
+  margin-left: -10px;
+  padding: 20px;
+  height: 50px;
+  width: 100%;
+  color: beige;
+  font-size: 50px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  .navbar {
+    width: 100%;
+    font-size: 40px;
+    height: 90px;
+  }
+}
+
 /* Style for the container of the cards */
 .class-container {
     display: flex;
