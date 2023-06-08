@@ -1,49 +1,75 @@
-.card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 300px;
-    margin: 20px;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    justify-content: space-between;
-    align-items: baseline;
-  }
-  
-  .card img {
-    width: 100%;
-    height: auto;
-    margin-bottom: 10px;
-  }
-  
-  .card-content {
-    text-align: center;
-  }
-  
-  .card-content h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
-  }
-  
-  .card-content p {
-    font-size: 16px;
-    margin-bottom: 10px;
-  }
-  
-  .card-content a {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #007acc;
-    color: #fff;
-    border-radius: 5px;
-    text-decoration: none;
-    transition: background-color 0.3s ease;
-  }
-  
-  .card-content a:hover {
-    background-color: #005b9f;
-  }
+*{
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Oswald', sans-serif;
+}
 
- 
+.background{
+  background-color: #fff;
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(90deg, #ff6596,#60bef8,#d88cff);
+  background-size: 600% 100%;
+  animation: byAnimatedGradient 15s infinite linear;
+}
+/* .background h1{
+  text-align: center;
+  padding: 25px 0px;
+} */
+h1{
+  text-align: center;
+  padding-top: 5%;
+  font-family: 'Roboto',sans-serif;
+  letter-spacing: 6px;
+  font-size: 4vw;
+  color:white;
+}
+
+@keyframes byAnimatedGradient{
+  0%{
+    background-position: 0 85%;
+  }
+  50%{
+    background-position: 100% 20%;
+  }
+  100%{
+      background-position: 0% 85%;
+  }
+}
+.container{
+  width: 1170px;
+  margin: auto;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  display: flex;
+  
+}
+.card{
+  flex-basis: 60%;
+  margin: 10px 0px;
+  box-shadow: 0px 0px 10 px lightgrey;
+  padding: 50px;
+}
+
+.card a:hover {
+  background-color: #005b9f;
+}
+
+.card a{
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007acc;
+  color: #fff;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+@media only screen and (min-width: 200px) and (max-width: 767px){
+  .container{
+    width: 100%;
+    flex-direction: column;
+  }
+  .card{
+    margin: 10px;
+  }
+}
