@@ -11,59 +11,59 @@ body {
 
 /* Style for the cards */
 .card {
-    width: 300px;
-    margin: 20px;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    background-color: #fff;
-    transition: transform 0.2s ease-in-out;
+  width: 300px;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+  transition: transform 0.2s ease-in-out;
 }
 
 /* Hover effect for the cards */
 .card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  transform: translateY(-5px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
 
 /* Style for the card image */
 .card img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-    margin-bottom: 10px;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 10px;
 }
 
 /* Style for the card content */
 .card-content {
-    text-align: center;
+  text-align: center;
 }
 
 /* Style for the card title */
 .card-content h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
+  font-size: 24px;
+  margin-bottom: 10px;
 }
 
 /* Style for the card description */
 .card-content p {
-    font-size: 16px;
-    margin-bottom: 10px;
+  font-size: 16px;
+  margin-bottom: 10px;
 }
 
 /* Style for the card link */
 .card-content a {
-    display: inline-block;
-    padding: 10px 20px;
-    border-radius: 20px;
-    background-color: #007bff;
-    color: #fff;
-    text-decoration: none;
-    font-size: 16px;
-    transition: background-color 0.2s ease-in-out;
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 20px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  transition: background-color 0.2s ease-in-out;
 }
 
 /* Hover effect for the card link */
 .card-content a:hover {
-    background-color: #0062cc;
+  background-color: #0062cc;
 }
