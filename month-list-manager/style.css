@@ -5,8 +5,11 @@
     }
 
     h2 {
+      font-family: 'Montserrat';
       font-size: 50px;
       text-align: center;
+      background-color: lightblue;
+      
     }
 
     form {
@@ -60,4 +63,8 @@
     li {
       font-size: 30px;
       margin-bottom: 5px;
+    }
+
+    body{
+      background-color:blue;
     }
