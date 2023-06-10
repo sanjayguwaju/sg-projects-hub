@@ -10,13 +10,29 @@
   </style>
 </head>
 <body>
+  <h2 style="background-color: cadetblue; box-shadow:3px 3px 8px #aebbe9 ;">Welcome to URL Splitter</h2>
   <h2>URL Splitter</h2>
-  <input type="text" id="inputURL" placeholder="Enter a URL">
-  <button onclick="splitURL()">Split</button>
+  <input type="text" id="inputURL" placeholder="Enter a URL" style="
+    width: 75%;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    background-color: #f1f1f1;
+    /* box-shadow: 0 4px 30px rgba(18, 16, 16, 0.1); */
+    text-align: center;
+  ">
+   
+  <button onclick="splitURL()"
+   style="
+   font-size:1.2rem; 
+   font-weight: 400; 
+   border-radius: 0.3rem;">Split</button>
   <ul id="output"></ul>
   <br>
   <br>
-  <a href="./../index.html">Go back to main page</a>
+  <a href="./../index.html" style="text-decoration: none; color:black; font-size: 1.rem;">
+    Go back to main page
+  </a>
   <script>
     function splitURL() {
       var inputURL = document.getElementById("inputURL").value;
