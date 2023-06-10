@@ -1,6 +1,6 @@
 # Collection of HTML, CSS, and JavaScript Projects
 
-[Visit the Verdant Profiterole website](https://verdant-profiterole-e5b072.netlify.app)
+[Visit the collection of project based learning website](https://verdant-profiterole-e5b072.netlify.app)
 
 Welcome to the Collection of HTML, CSS, and JavaScript Projects! This repository showcases a variety of web development projects built using HTML, CSS, and JavaScript. Each project offers unique features and demonstrates different concepts and techniques.
 
