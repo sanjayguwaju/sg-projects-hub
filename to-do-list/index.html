@@ -9,11 +9,19 @@
 <body>
     <div class="container">
         <div class="to-do">
-            <h2>To-Do List <img src ="img/to-do.png"></h2>
+            <h2>To-Do List <img src ="asset/img/to-do.png"></h2>
             <div class ="row">
-                <input type="text" id="input-box" placeholder="Add you task">
+                <input type="text" id="input-box" placeholder="Add your task">
+                <button onclick="addTask()">Add</button>
             </div>
+            <ul id="list-container">
+                <!-- <li class="checked">Buy Groceries</li>
+                <li>Task 2</li>
+                <li>Task 3</li>
+                <li>Task 4</li> -->
+            </ul>
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
