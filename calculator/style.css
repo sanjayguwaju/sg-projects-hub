@@ -6,7 +6,7 @@ input {
     margin: 10px;
     background-color: #000;
     color: #fff;
-    border-style: none; 
+    border-style: none;
 
 }
 
@@ -16,7 +16,7 @@ input {
     /* border: medium solid purple */
 }
 
-h1{
+h1 {
     text-align: center;
     font-size: 80px;
     margin-right: auto;
