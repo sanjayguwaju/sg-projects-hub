@@ -8,7 +8,7 @@
       font-family: 'Montserrat';
       font-size: 50px;
       text-align: center;
-      background-color: lightblue;
+      background-color: rgb(255, 255, 255);
       
     }
 
@@ -43,7 +43,8 @@
       border: none;
       border-radius: 5px;
       background-color: #4CAF50;
-      color: #fff;
+      color: #ffffff;
+      font-weight: bolder;
       cursor: pointer;
       margin-right: 10px;
     }
@@ -63,8 +64,9 @@
     li {
       font-size: 30px;
       margin-bottom: 5px;
+      color: #fff;
     }
 
     body{
-      background-color:blue;
+      background-color:rgb(82, 15, 61);
     }
