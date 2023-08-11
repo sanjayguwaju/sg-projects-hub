@@ -4,7 +4,7 @@ const saroj = {
     greet: function() {
         console.log('Hey, its i am baklol');
     },
-    friends: ["hari", "shyam", "gita"]
+    friends: ["harii", "shyam", "gita"]
     // 
 }
 
