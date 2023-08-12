@@ -2,12 +2,7 @@
 <html>
 <head>
   <title>Array Operations</title>
-  <style>
-    body {
-      text-align: center;
-      margin-top: 100px;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <h2>Array Operations</h2>
@@ -24,32 +19,6 @@
     <h3>Sum of All Numbers:</h3>
     <p id="sum"></p>
   </div>
-
-  <script>
-    function performOperations() {
-      var inputArray = document.getElementById("inputArray").value;
-      var numbers = inputArray.split(',').map(function(num) {
-        return parseInt(num.trim());
-      });
-
-      var doubledArray = numbers.map(function(num) {
-        return num * 2;
-      });
-
-      var evenNumbers = numbers.filter(function(num) {
-        return num % 2 === 0;
-      });
-
-       const sum = [1,2,3,]
-      var sum = numbers.reduce(function(acc, num) {
-        return acc + num;
-      }, 0);
-
-      document.getElementById("originalArray").innerText = numbers.join(", ");
-      document.getElementById("doubledArray").innerText = doubledArray.join(", ");
-      document.getElementById("evenNumbers").innerText = evenNumbers.join(", ");
-      document.getElementById("sum").innerText = sum;
-    }
-  </script>
+  <script src="script.js"></script>
 </body>
 </html>
