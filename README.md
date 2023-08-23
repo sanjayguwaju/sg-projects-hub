@@ -1,3 +1,10 @@
+# Project Hub
+
+Welcome to the Project Hub! This repository contains the source code for our project hub website.
+
+- **Production URL:** [https://sg-projects-hub.netlify.app/](https://sg-projects-hub.netlify.app/)
+
+- **Development URL:** [https://dev-sg-projects-hub.netlify.app/](https://dev-sg-projects-hub.netlify.app/)
 # Collection of HTML, CSS, and JavaScript Projects
 
 Welcome to the Collection of HTML, CSS, and JavaScript Projects! This repository showcases a variety of web development projects built using HTML, CSS, and JavaScript. Each project offers unique features and demonstrates different concepts and techniques.
