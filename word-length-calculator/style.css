@@ -1,0 +1,44 @@
+input {
+    margin-top: 50px;
+    margin-left: 400px;
+    width: 500px;
+    height: 80px;
+    display: block;
+    padding-left:250px;
+    font-size: 30px;
+}
+
+#output {
+    margin-top: 30px;
+    width: 300px;
+    font-size: 50px;
+    background: lightgreen;
+    margin-left: 400px;
+}
+
+#btn {
+    width: 350px;
+    height: 70px;
+    color: #fff;
+    background-color: blue;
+    border-style: none;
+    border-radius: 15px;
+    margin-top:10opx;
+    margin-left:600px;
+}
+
+body {
+    background-color: #FA8072;
+}
+
+h1 {
+    text-align: center;
+    color: #000;
+    margin-top: 50px;
+    font-size: 70px;
+    padding-left: 50px;
+}
+
+#container {
+    margin-top: 150px;
+}
