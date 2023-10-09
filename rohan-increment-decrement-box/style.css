@@ -1,0 +1,29 @@
+.display{
+    margin-left: 90px;
+    display: flex;
+    align-items: center;
+    height: 100px;
+    width: 100px;
+}
+#btn1{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: #ed0b0b;
+    border: 1px solid #000;
+    outline: none;
+    cursor: pointer;
+}
+#btn2{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: #0bed0b;
+    border: 1px solid #000;
+    outline: none;
+    cursor: pointer;
+}
+.box{
+    padding-left: 43%;
+    padding-top: 10%;
+}
