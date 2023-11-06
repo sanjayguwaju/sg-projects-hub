@@ -1,17 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="Javascript calculator"/>
+    <meta name="description" content="Javascript calculator" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Basic calculator</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <h1>Basic calculator</h1>
     <br>
     <form action="" id="myform" name="calc">
-        <input type="text" name="display" style="width:675px; height:100px; text-align:center; background-color:#1f80c9;">
+        <input type="text" name="display"
+            style="width:675px; height:100px; text-align:center; background-color:#1f80c9;">
         <br>
         <input type="button" value="1" onclick="calc.display.value+='1'">
         <input type="button" value="2" onclick="calc.display.value+='2'">
@@ -29,6 +32,7 @@
         <input type="button" value="=" onclick="calc.display.value=eval(calc.display.value)">
         <input type="button" value="&#247;" onclick="calc.display.value+='/'" style="background-color: green;">
     </form>
-    
+
 </body>
+
 </html>
