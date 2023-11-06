@@ -1,7 +1,7 @@
 const saroj = {
     name: 'Saroj',
     age: 23,
-    greet: function() {
+    greet: function () {
         console.log('Hey, its i am baklol');
     },
     friends: ["harii", "shyam", "gita"]
