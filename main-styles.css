@@ -91,3 +91,8 @@ body {
 .card-content a:hover {
   background-color: #0062cc;
 }
+
+.card-image {
+  width: 300px !important;
+  height: 300px !important;
+}
