@@ -1,0 +1,11 @@
+.digital-clock {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    font-size: 48px;
+    text-align: center;
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid #333;
+    display: inline-block;
+  }
+  
