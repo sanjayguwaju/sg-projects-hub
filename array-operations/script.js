@@ -1,4 +1,4 @@
-function performOperations() {
+const performOperations = () => {
   var inputArray = document.getElementById("inputArray").value;
   var numbers = inputArray.split(',').map(function (num) {
     return parseInt(num.trim());
