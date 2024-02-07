@@ -1,19 +1,19 @@
 const performOperations = () => {
-  var inputArray = document.getElementById("inputArray").value;
-  var numbers = inputArray.split(',').map(function (num) {
+  const inputArray = document.getElementById("inputArray").value;
+  const numbers = inputArray.split(',').map(function (num) {
     return parseInt(num.trim());
   });
 
-  var doubledArray = numbers.map(function (num) {
+  const doubledArray = numbers.map(function (num) {
     return num * 2;
   });
 
-  var evenNumbers = numbers.filter(function (num) {
+  const evenNumbers = numbers.filter(function (num) {
     return num % 2 === 0;
   });
 
-  const sum = [1, 2, 3,]
-  var sum = numbers.reduce(function (acc, num) {
+  let sum = [1, 2, 3,]
+  sum = numbers.reduce(function (acc, num) {
     return acc + num;
   }, 0);
 
