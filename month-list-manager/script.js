@@ -18,23 +18,6 @@ monthForm.addEventListener("submit", function(event) {
   addMonth();
 });
 
-
-// const hello = {
-//   name: 'hello',
-//   age: 20,
-//   reverse: function addMonth() {
-//     var month = monthInput.value.trim(); 
-//     if (month !== '') {
-//       months.push(month);
-//       saveData();
-//       displayList();
-//       monthInput.value = '';
-//     }
-//   }
-// }
-
-// hello.rush()
-
 function addMonth() {
   var month = monthInput.value.trim(); 
   if (month !== '') {
@@ -151,5 +134,3 @@ function displayList() {
     monthList.appendChild(li);
   }
 }
-
-console.log(months)
