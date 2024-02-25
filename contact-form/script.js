@@ -22,7 +22,6 @@ const resetForm = () => {
   saveFormData();
 };
 
-
 contactForm.addEventListener("submit", (event) => {
   event.preventDefault();
   saveFormData();
@@ -30,4 +29,3 @@ contactForm.addEventListener("submit", (event) => {
 });
 
 resetBtn.addEventListener("click", resetForm);
-
