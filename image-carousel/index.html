@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Carousel</title>
+  <style>
+    .carousel {
+      width: 300px;
+      overflow: hidden;
+      position: relative;
+    }
+    .slides {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+    }
+    .slide {
+      min-width: 100%;
+    }
+    .controls {
+      position: absolute;
+      top: 50%;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="carousel">
+    <div class="slides" id="slides">
+      <img class="slide" src="https://via.placeholder.com/300x150/ff7f7f" alt="Slide 1">
+      <img class="slide" src="https://via.placeholder.com/300x150/7f7fff" alt="Slide 2">
+      <img class="slide" src="https://via.placeholder.com/300x150/7fff7f" alt="Slide 3">
+    </div>
+    <div class="controls">
+      <button id="prevBtn">Prev</button>
+      <button id="nextBtn">Next</button>
+    </div>
+  </div>
+
+  <script>
+    const slides = document.getElementById('slides');
+    let index = 0;
+    const totalSlides = document.querySelectorAll('.slide').length;
+
+    document.getElementById('nextBtn').onclick = () => {
+      index = (index + 1) % totalSlides;
+      slides.style.transform = `translateX(-${index * 100}%)`;
+    };
+
+    document.getElementById('prevBtn').onclick = () => {
+      index = (index - 1 + totalSlides) % totalSlides;
+      slides.style.transform = `translateX(-${index * 100}%)`;
+    };
+  </script>
+
+</body>
+</html>
