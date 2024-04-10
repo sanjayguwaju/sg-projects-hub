@@ -4,27 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Image Carousel</title>
-  <style>
-    .carousel {
-      width: 300px;
-      overflow: hidden;
-      position: relative;
-    }
-    .slides {
-      display: flex;
-      transition: transform 0.5s ease-in-out;
-    }
-    .slide {
-      min-width: 100%;
-    }
-    .controls {
-      position: absolute;
-      top: 50%;
-      width: 100%;
-      display: flex;
-      justify-content: space-between;
-    }
-  </style>
+  <link rel="stylesheet" href="./style.css">
 </head>
 <body>
 
@@ -39,22 +19,6 @@
       <button id="nextBtn">Next</button>
     </div>
   </div>
-
-  <script>
-    const slides = document.getElementById('slides');
-    let index = 0;
-    const totalSlides = document.querySelectorAll('.slide').length;
-
-    document.getElementById('nextBtn').onclick = () => {
-      index = (index + 1) % totalSlides;
-      slides.style.transform = `translateX(-${index * 100}%)`;
-    };
-
-    document.getElementById('prevBtn').onclick = () => {
-      index = (index - 1 + totalSlides) % totalSlides;
-      slides.style.transform = `translateX(-${index * 100}%)`;
-    };
-  </script>
-
+  <script src="./script.js"></script>
 </body>
 </html>
