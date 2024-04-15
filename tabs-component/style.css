@@ -1,0 +1,17 @@
+.tabs {
+    display: flex;
+  }
+  .tabs button {
+    padding: 10px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+  }
+  .tab-content {
+    display: none;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-top: 10px;
+  }
+  .tab-content.active {
+    display: block;
+  }
