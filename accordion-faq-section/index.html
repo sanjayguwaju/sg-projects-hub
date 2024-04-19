@@ -4,26 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Accordion FAQ</title>
-  <style>
-    .accordion {
-      cursor: pointer;
-      padding: 10px;
-      background-color: #f1f1f1;
-      border: none;
-      text-align: left;
-      outline: none;
-      transition: background-color 0.3s ease;
-    }
-    .panel {
-      padding: 0 10px;
-      display: none;
-      background-color: white;
-      overflow: hidden;
-    }
-  </style>
 </head>
 <body>
-
   <button class="accordion">Question 1</button>
   <div class="panel"><p>Answer 1</p></div>
 
@@ -32,16 +14,7 @@
 
   <button class="accordion">Question 3</button>
   <div class="panel"><p>Answer 3</p></div>
-
-  <script>
-    const accordions = document.querySelectorAll('.accordion');
-    accordions.forEach(acc => {
-      acc.onclick = () => {
-        const panel = acc.nextElementSibling;
-        panel.style.display = panel.style.display === 'block' ? 'none' : 'block';
-      };
-    });
-  </script>
+  <script src=""></script>
 
 </body>
 </html>
