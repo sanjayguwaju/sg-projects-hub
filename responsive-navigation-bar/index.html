@@ -5,35 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Responsive Navbar</title>
   <style>
-    .navbar {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      background-color: #333;
-      padding: 10px;
-    }
-    .navbar ul {
-      list-style: none;
-      display: flex;
-      margin: 0;
-      padding: 0;
-    }
-    .navbar ul li {
-      margin-right: 20px;
-    }
-    .navbar ul li a {
-      color: white;
-      text-decoration: none;
-    }
-    @media (max-width: 600px) {
-      .navbar ul {
-        flex-direction: column;
-        display: none;
-      }
-      .navbar ul.show {
-        display: flex;
-      }
-    }
+    
   </style>
 </head>
 <body>
@@ -50,12 +22,7 @@
   </div>
 
   <script>
-    const toggleMenu = document.getElementById('toggleMenu');
-    const navLinks = document.getElementById('navLinks');
-    
-    toggleMenu.onclick = () => {
-      navLinks.classList.toggle('show');
-    };
+
   </script>
 
 </body>
