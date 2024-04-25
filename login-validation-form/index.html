@@ -4,22 +4,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Login Form Validation</title>
-  <style>
-    form {
-      max-width: 300px;
-      margin: 0 auto;
-    }
-    input {
-      display: block;
-      margin-bottom: 10px;
-      padding: 10px;
-      width: 100%;
-    }
-    .error {
-      color: red;
-      display: none;
-    }
-  </style>
 </head>
 <body>
 
@@ -29,21 +13,5 @@
     <span id="error" class="error">Please fill out all fields!</span>
     <button type="submit">Login</button>
   </form>
-
-  <script>
-    const form = document.getElementById('loginForm');
-    const error = document.getElementById('error');
-
-    form.addEventListener('submit', function (e) {
-      const username = document.getElementById('username').value;
-      const password = document.getElementById('password').value;
-
-      if (!username || !password) {
-        error.style.display = 'block';
-        e.preventDefault();
-      }
-    });
-  </script>
-
 </body>
 </html>
