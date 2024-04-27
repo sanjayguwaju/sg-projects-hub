@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Signup Form with Validation</title>
+  <style>
+    form {
+      max-width: 300px;
+      margin: 0 auto;
+    }
+    input {
+      display: block;
+      margin-bottom: 10px;
+      padding: 10px;
+      width: 100%;
+    }
+    .error {
+      color: red;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+  <form id="signupForm">
+    <input type="text" id="name" placeholder="Full Name" required>
+    <input type="email" id="email" placeholder="Email" required>
+    <input type="password" id="password" placeholder="Password" required>
+    <input type="password" id="confirmPassword" placeholder="Confirm Password" required>
+    <span id="error" class="error">All fields must be filled out and passwords must match!</span>
+    <button type="submit">Sign Up</button>
+  </form>
+
+  <script>
+    const form = document.getElementById('signupForm');
+    const error = document.getElementById('error');
+
+    form.addEventListener('submit', function (e) {
+      const name = document.getElementById('name').value;
+      const email = document.getElementById('email').value;
+      const password = document.getElementById('password').value;
+      const confirmPassword = document.getElementById('confirmPassword').value;
+
+      if (!name || !email || !password || password !== confirmPassword) {
+        error.style.display = 'block';
+        e.preventDefault();
+      }
+    });
+  </script>
+
+</body>
+</html>
