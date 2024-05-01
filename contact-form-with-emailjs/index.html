@@ -4,18 +4,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact Form with EmailJS</title>
-  <style>
-    form {
-      max-width: 300px;
-      margin: 0 auto;
-    }
-    input, textarea {
-      display: block;
-      margin-bottom: 10px;
-      padding: 10px;
-      width: 100%;
-    }
-  </style>
 </head>
 <body>
 
@@ -27,19 +15,5 @@
   </form>
 
   <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
-  <script>
-    (function () {
-      emailjs.init("YOUR_USER_ID");
-    })();
-
-    const form = document.getElementById('contactForm');
-
-    form.addEventListener('submit', function (e) {
-      e.preventDefault();
-      emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', this)
-        .then(() => alert('Message Sent!'), (error) => alert('Failed to send message.'));
-    });
-  </script>
-
 </body>
 </html>
