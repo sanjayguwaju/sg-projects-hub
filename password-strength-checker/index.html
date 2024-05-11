@@ -4,22 +4,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Password Strength Checker</title>
-  <style>
-    form {
-      max-width: 300px;
-      margin: 0 auto;
-    }
-    input {
-      display: block;
-      margin-bottom: 10px;
-      padding: 10px;
-      width: 100%;
-    }
-    .strength {
-      color: red;
-      font-weight: bold;
-    }
-  </style>
 </head>
 <body>
 
@@ -27,26 +11,6 @@
     <input type="password" id="password" placeholder="Enter password">
     <p id="strength" class="strength"></p>
   </form>
-
-  <script>
-    const passwordInput = document.getElementById('password');
-    const strengthText = document.getElementById('strength');
-
-    passwordInput.addEventListener('input', function () {
-      const password = passwordInput.value;
-      let strength = '';
-
-      if (password.length < 6) {
-        strength = 'Weak';
-      } else if (password.length >= 6 && password.match(/[A-Z]/) && password.match(/[0-9]/)) {
-        strength = 'Strong';
-      } else {
-        strength = 'Medium';
-      }
-
-      strengthText.textContent = `Password strength: ${strength}`;
-    });
-  </script>
-
+  <script src="./script.js"></script>
 </body>
 </html>
