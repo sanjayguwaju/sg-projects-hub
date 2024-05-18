@@ -4,12 +4,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Rock, Paper, Scissors Game</title>
-  <style>
-    button {
-      margin: 10px;
-      padding: 10px;
-    }
-  </style>
 </head>
 <body>
 
@@ -18,31 +12,6 @@
   <button id="paper">Paper</button>
   <button id="scissors">Scissors</button>
   <h3 id="result"></h3>
-
-  <script>
-    const choices = ["rock", "paper", "scissors"];
-    const result = document.getElementById('result');
-
-    document.querySelectorAll('button').forEach(button => {
-      button.addEventListener('click', function () {
-        const userChoice = this.id;
-        const computerChoice = choices[Math.floor(Math.random() * choices.length)];
-        let outcome;
-
-        if (userChoice === computerChoice) {
-          outcome = "It's a draw!";
-        } else if ((userChoice === "rock" && computerChoice === "scissors") ||
-                   (userChoice === "scissors" && computerChoice === "paper") ||
-                   (userChoice === "paper" && computerChoice === "rock")) {
-          outcome = "You win!";
-        } else {
-          outcome = "You lose!";
-        }
-
-        result.textContent = `You chose ${userChoice}, computer chose ${computerChoice}. ${outcome}`;
-      });
-    });
-  </script>
-
+  
 </body>
 </html>
