@@ -10,8 +10,8 @@ document.querySelectorAll('button').forEach(button => {
     if (userChoice === computerChoice) {
       outcome = "It's a draw!";
     } else if ((userChoice === "rock" && computerChoice === "scissors") ||
-               (userChoice === "scissors" && computerChoice === "paper") ||
-               (userChoice === "paper" && computerChoice === "rock")) {
+      (userChoice === "scissors" && computerChoice === "paper") ||
+      (userChoice === "paper" && computerChoice === "rock")) {
       outcome = "You win!";
     } else {
       outcome = "You lose!";
