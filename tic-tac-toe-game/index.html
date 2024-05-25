@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tic-Tac-Toe</title>
+  <style>
+    #board {
+      display: grid;
+      grid-template-columns: repeat(3, 100px);
+      grid-gap: 10px;
+      margin: 20px auto;
+    }
+    .cell {
+      width: 100px;
+      height: 100px;
+      font-size: 2em;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 2px solid #333;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Tic-Tac-Toe</h2>
+  <div id="board">
+    <div class="cell"></div>
+    <div class="cell"></div>
+    <div class="cell"></div>
+    <div class="cell"></div>
+    <div class="cell"></div>
+    <div class="cell"></div>
+    <div class="cell"></div>
+    <div class="cell"></div>
+    <div class="cell"></div>
+  </div>
+  <h3 id="winner"></h3>
+
+  <script>
+    const cells = document.querySelectorAll('.cell');
+    let currentPlayer = 'X';
+    const winnerText = document.getElementById('winner');
+    let board = ['', '', '', '', '', '', '', '', ''];
+
+    cells.forEach((cell, index) => {
+      cell.addEventListener('click', () => {
+        if (!cell.textContent && !winnerText.textContent) {
+          cell.textContent = currentPlayer;
+          board[index] = currentPlayer;
+          if (checkWinner()) {
+            winnerText.textContent = `${currentPlayer} wins!`;
+          } else if (board.every(cell => cell)) {
+            winnerText.textContent = "It's a draw!";
+          } else {
+            currentPlayer = currentPlayer === 'X' ? 'O' : 'X';
+          }
+        }
+      });
+    });
+
+    function checkWinner() {
+      const winningCombinations = [
+        [0, 1, 2], [3, 4, 5], [6, 7, 8],
+        [0, 3, 6], [1, 4, 7], [2, 5, 8],
+        [0, 4, 8], [2, 4, 6]
+      ];
+
+      return winningCombinations.some(combination =>
+        combination.every(index => board[index] === currentPlayer)
+      );
+    }
+  </script>
+
+</body>
+</html>
