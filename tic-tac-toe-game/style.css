@@ -3,8 +3,9 @@
     grid-template-columns: repeat(3, 100px);
     grid-gap: 10px;
     margin: 20px auto;
-  }
-  .cell {
+}
+
+.cell {
     width: 100px;
     height: 100px;
     font-size: 2em;
@@ -12,4 +13,4 @@
     align-items: center;
     justify-content: center;
     border: 2px solid #333;
-  }
+}
