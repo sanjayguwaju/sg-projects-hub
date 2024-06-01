@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Whack-a-Mole Game</title>
+  <style>
+    #game {
+      display: grid;
+      grid-template-columns: repeat(3, 100px);
+      grid-gap: 10px;
+      margin: 20px auto;
+    }
+    .hole {
+      width: 100px;
+      height: 100px;
+      background-color: #333;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .mole {
+      background-color: yellow;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Whack-a-Mole</h2>
+  <div id="game">
+    <div class="hole"></div>
+    <div class="hole"></div>
+    <div class="hole"></div>
+    <div class="hole"></div>
+    <div class="hole"></div>
+    <div class="hole"></div>
+    <div class="hole"></div>
+    <div class="hole"></div>
+    <div class="hole"></div>
+  </div>
+  <h3>Score: <span id="score">0</span></h3>
+
+  <script>
+    const holes = document.querySelectorAll('.hole');
+    let score = 0;
+    let mole;
+
+    function showMole() {
+      const randomHole = holes[Math.floor(Math.random() * holes.length)];
+      randomHole.classList.add('mole');
+      mole = randomHole;
+      setTimeout(() => {
+        randomHole.classList.remove('mole');
+        showMole();
+      }, 1000);
+    }
+
+    holes.forEach(hole => {
+      hole.addEventListener('click', function () {
+        if (this === mole) {
+          score++;
+          document.getElementById('score').textContent = score;
+        }
+      });
+    });
+
+    showMole();
+  </script>
+
+</body>
+</html>
