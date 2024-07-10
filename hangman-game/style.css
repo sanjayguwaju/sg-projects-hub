@@ -1,16 +1,19 @@
-.word, .message {
-    font-size: 24px;
-    margin: 20px;
-  }
-  .letters {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 20px;
-  }
-  .letter {
-    font-size: 20px;
-    margin: 5px;
-    padding: 10px;
-    border: 1px solid black;
-    cursor: pointer;
-  }
+.word,
+.message {
+  font-size: 24px;
+  margin: 20px;
+}
+
+.letters {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px;
+}
+
+.letter {
+  font-size: 20px;
+  margin: 5px;
+  padding: 10px;
+  border: 1px solid black;
+  cursor: pointer;
+}
