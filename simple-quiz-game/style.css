@@ -1,0 +1,13 @@
+.question {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.answers {
+    list-style: none;
+    padding: 0;
+}
+
+.answers li {
+    margin: 5px 0;
+}
